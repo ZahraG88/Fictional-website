@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <title>Site landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1>Mon Site Web</h1>
+
+        <div class="menu-icon">
+          <img
+            class="hamburger-icon"
+            src="./images/icon-hamburger.svg"
+            alt="hamburger icon"
+          />
+          <img
+            class="close-icon"
+            src="./images/icon-close.svg"
+            alt="hamburger icon"
+          />
+        </div>
+
+        <ul class="navbar__links">
+          <li class="navbar__item"><a href="#">Accueil</a></li>
+          <li class="navbar__item"><a href="#about__section">A propos</a></li>
+          <li class="navbar__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hero">
+        <h2 class="hero__title">Immersive experiences that feel real.</h2>
+      </div>
+    </header>
+    <main>
+      <section class="main-section">
+        <section class="about" id="about__section">
+          <picture class="about__section-picture">
+            <source
+              srcset="./images/desktop/japanese-house.jpg"
+              media="(min-width:901px)"
+            />
+            <img
+              src="./images/mobile/japanese-house.jpg"
+              alt="Old Japanese house"
+            />
+          </picture>
+          <div class="about__content">
+            <h2 class="about__title">About This Web Site</h2>
+            <p class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, est
+              omnis? Commodi ipsam blanditiis veritatis ad corporis eius
+              voluptates voluptatem?Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+          </div>
+        </section>
+
+        <section class="gallery">
+          <div class="gallery__section-header">
+            <h2>Galerie d’images</h2>
+            <button class="gallery__btn gallery__btn--desktop">See all</button>
+          </div>
+          <div class="gallery__grid">
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/asakusa.jpg"
+                  media="(min-width:901px)"
+                />
+                <img src="./images/mobile/asakusa.JPG" alt="Asakusa temple" />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">
+                Lorem <br />
+                Ipsum
+              </h3>
+            </div>
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/forest.jpg"
+                  media="(min-width:901px)"
+                />
+                <img src="./images/mobile/forest.JPG" alt="forest" />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">Lorem<br />Ipsum</h3>
+            </div>
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/stairs.jpg"
+                  media="(min-width:901px)"
+                />
+                <img src="./images/mobile/stairs.JPG" alt="stairs" />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">
+                Lorem <br />
+                Ipsum
+              </h3>
+            </div>
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/shop.jpg"
+                  media="(min-width:901px)"
+                />
+                <img src="./images/mobile/shop.JPG" alt="shop" />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">
+                Lorem <br />
+                Ipsum
+              </h3>
+            </div>
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/tokyotower.jpg"
+                  media="(min-width:901px)"
+                />
+
+                <img
+                  src="./images/mobile/tokyotower.JPG"
+                  alt="tokyo tokyotower"
+                />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">
+                Lorem <br />
+                Ipsum
+              </h3>
+            </div>
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/tori.jpg"
+                  media="(min-width:901px)"
+                />
+                <img src="./images/mobile/tori.JPG" alt="toris" />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">
+                Lorem<br />
+                Ipsum
+              </h3>
+            </div>
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/night.jpg"
+                  media="(min-width:901px)"
+                />
+                <img src="./images/mobile/night.JPG" alt="night" />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">
+                Lorem <br />
+                Ipsum
+              </h3>
+            </div>
+            <div class="img-container">
+              <picture>
+                <source
+                  srcset="./images/desktop/randomstreet.jpg"
+                  media="(min-width:901px)"
+                />
+                <img
+                  src="./images/mobile/randomstreet.JPG"
+                  alt="randomstreet"
+                />
+              </picture>
+              <div class="gallery__overlay"></div>
+              <h3 class="description-img">
+                Lorem <br />
+                Ipsum
+              </h3>
+            </div>
+          </div>
+          <button class="gallery__btn gallery__btn--mobile">See all</button>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__top">
+        <h2 class="footer__logo">Mon Site Web</h2>
+
+        <div class="footer__social footer__social--desktop">
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="facebook logo"
+          /></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="twitter" /></a>
+          <a href="#"
+            ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+          /></a>
+          <a href="#"
+            ><img src="./images/icon-instagram.svg" alt="instagram"
+          /></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__nav">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">A propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="footer__social footer__social--mobile">
+          <a href="#"
+            ><img src="./images/icon-facebook.svg" alt="facebook logo"
+          /></a>
+          <a href="#"><img src="./images/icon-twitter.svg" alt="twitter" /></a>
+          <a href="#"
+            ><img src="./images/icon-pinterest.svg" alt="Pinterest"
+          /></a>
+          <a href="#"
+            ><img src="./images/icon-instagram.svg" alt="instagram"
+          /></a>
+        </div>
+        <p class="footer__copyright">
+          &copy; 2023 Mon Site Web. Tous droits réservés
+        </p>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
